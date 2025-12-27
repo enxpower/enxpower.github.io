@@ -5,13 +5,24 @@
   padding: 0;
 }
 
+:root{
+  --text:#111;
+  --text-2:#333;
+  --muted:#666;
+
+  /* 更克制：更淡、更柔 */
+  --line: rgba(17,17,17,0.08);
+  --line-soft: rgba(17,17,17,0.06);
+  --line-ultra: rgba(17,17,17,0.045);
+}
+
 html {
   font-size: 16px;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  color: #111;
+  color: var(--text);
   background-color: #fff;
   line-height: 1.6;
 }
@@ -32,7 +43,7 @@ body {
 
 /* Header */
 .site-header {
-  border-bottom: 1px solid rgba(17, 17, 17, 0.08);
+  border-bottom: 1px solid var(--line);
 }
 
 .header-inner {
@@ -46,7 +57,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-  color: #111;
+  color: var(--text);
 }
 
 .site-nav .nav-list {
@@ -58,7 +69,7 @@ body {
 .site-nav a {
   text-decoration: none;
   font-size: 14px;
-  color: #333;
+  color: var(--text-2);
 }
 
 .site-nav a:hover {
@@ -81,20 +92,43 @@ body {
   letter-spacing: -0.02em;
 }
 
-.page-content p {
-  margin-bottom: 16px;
+/* 内容宽度 */
+.page-content p,
+.page-content ul {
   max-width: 720px;
 }
 
-/* Subtle section dividers for markdown headings */
-.page-content h2 {
+/* 段落 */
+.page-content p {
+  margin-bottom: 16px;
+}
+
+/* 列表 */
+.page-content ul {
+  margin: 8px 0 16px 20px;
+}
+
+.page-content li {
+  margin: 6px 0;
+}
+
+/* 分割线：让 h2/h3 自带更淡的底线（你截图里那种效果） */
+.page-content h2,
+.page-content h3 {
   margin-top: 28px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba(17, 17, 17, 0.08);
-  font-size: 20px;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  border-bottom: 1px solid var(--line-ultra);
+}
+
+.page-content h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.page-content h3 {
+  font-size: 18px;
+  font-weight: 700;
 }
 
 /* Home */
@@ -112,10 +146,10 @@ body {
 
 /* Footer */
 .site-footer {
-  border-top: 1px solid rgba(17, 17, 17, 0.08);
-  padding: 32px 0;
+  border-top: 1px solid var(--line);
+  padding: 28px 0;
   font-size: 13px;
-  color: #666;
+  color: var(--muted);
 }
 
 .footer-inner {
@@ -125,32 +159,32 @@ body {
 }
 
 .site-footer a {
-  color: inherit;
+  color: var(--muted);
   text-decoration: none;
 }
 
 .site-footer a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-/* Footer social icon */
-.social-link {
+/* Footer - LinkedIn icon */
+.footer-social {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: rgba(17, 17, 17, 0.38);
-  transition: color 150ms ease;
+  color: rgba(17,17,17,0.45); /* 灰色 icon */
+  line-height: 0;
 }
 
-.social-link:hover {
-  color: rgba(17, 17, 17, 0.55);
+.footer-social:hover {
+  color: rgba(17,17,17,0.70);
+  text-decoration: none;
 }
 
-.social-icon {
-  width: 16px;
-  height: 16px;
+.footer-social svg {
+  width: 18px;
+  height: 18px;
   display: block;
-  fill: currentColor;
 }
 
 /* Responsive */
