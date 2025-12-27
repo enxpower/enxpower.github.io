@@ -5,24 +5,13 @@
   padding: 0;
 }
 
-:root{
-  --text:#111;
-  --text-2:#333;
-  --muted:#666;
-
-  /* 更克制：更淡、更柔 */
-  --line: rgba(17,17,17,0.08);
-  --line-soft: rgba(17,17,17,0.06);
-  --line-ultra: rgba(17,17,17,0.045);
-}
-
 html {
   font-size: 16px;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  color: var(--text);
+  color: #111;
   background-color: #fff;
   line-height: 1.6;
 }
@@ -43,7 +32,7 @@ body {
 
 /* Header */
 .site-header {
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .header-inner {
@@ -57,7 +46,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-  color: var(--text);
+  color: #111;
 }
 
 .site-nav .nav-list {
@@ -69,7 +58,7 @@ body {
 .site-nav a {
   text-decoration: none;
   font-size: 14px;
-  color: var(--text-2);
+  color: #333;
 }
 
 .site-nav a:hover {
@@ -92,43 +81,17 @@ body {
   letter-spacing: -0.02em;
 }
 
-/* 内容宽度 */
-.page-content p,
-.page-content ul {
+.page-content p {
+  margin-bottom: 16px;
   max-width: 720px;
 }
 
-/* 段落 */
-.page-content p {
-  margin-bottom: 16px;
-}
-
-/* 列表 */
-.page-content ul {
-  margin: 8px 0 16px 20px;
-}
-
-.page-content li {
-  margin: 6px 0;
-}
-
-/* 分割线：让 h2/h3 自带更淡的底线（你截图里那种效果） */
+/* --- Subtle Section Dividers (Very restrained) --- */
 .page-content h2,
 .page-content h3 {
-  margin-top: 28px;
-  margin-bottom: 12px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--line-ultra);
-}
-
-.page-content h2 {
-  font-size: 22px;
-  font-weight: 700;
-}
-
-.page-content h3 {
-  font-size: 18px;
-  font-weight: 700;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding-bottom: 6px;
+  margin-bottom: 18px;
 }
 
 /* Home */
@@ -146,10 +109,10 @@ body {
 
 /* Footer */
 .site-footer {
-  border-top: 1px solid var(--line);
-  padding: 28px 0;
+  border-top: 1px solid #e5e5e5;
+  padding: 32px 0;
   font-size: 13px;
-  color: var(--muted);
+  color: #666;
 }
 
 .footer-inner {
@@ -159,32 +122,12 @@ body {
 }
 
 .site-footer a {
-  color: var(--muted);
+  color: #666;
   text-decoration: none;
 }
 
 .site-footer a:hover {
   text-decoration: underline;
-}
-
-/* Footer - LinkedIn icon */
-.footer-social {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: rgba(17,17,17,0.45); /* 灰色 icon */
-  line-height: 0;
-}
-
-.footer-social:hover {
-  color: rgba(17,17,17,0.70);
-  text-decoration: none;
-}
-
-.footer-social svg {
-  width: 18px;
-  height: 18px;
-  display: block;
 }
 
 /* Responsive */
