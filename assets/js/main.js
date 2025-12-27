@@ -1,8 +1,8 @@
 (function () {
   "use strict";
 
-  // Intentionally minimal.
-  // This file exists to provide a stable entry point
-  // for future client-side enhancements if needed.
+  // Global site script placeholder.
+  // Intentionally minimal to ensure long-term stability
+  // and avoid unnecessary client-side dependencies.
 
 })();

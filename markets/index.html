@@ -4,19 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Markets | AGI&M ASSETS INC.</title>
-  <meta name="description" content="Markets served across energy and power infrastructure" />
-  <link rel="canonical" href="https://agim.ca/markets/" />
+  <title>AGI&M ASSETS INC.</title>
+
+  <meta name="description" content="Energy & Power Infrastructure" />
+  <link rel="canonical" href="https://agim.ca" />
 
   <link rel="stylesheet" href="/assets/css/main.css" />
 </head>
 <body>
 
-<header class="site-header">
+  <!-- Header -->
+  <header class="site-header">
   <div class="header-inner">
     <div class="site-brand">
-      <a href="/" class="brand-link">AGI&M ASSETS</a>
+      <a href="/" class="brand-link">
+        AGI&M ASSETS
+      </a>
     </div>
+
     <nav class="site-nav">
       <ul class="nav-list">
         <li><a href="/capabilities/">Capabilities</a></li>
@@ -28,68 +33,59 @@
   </div>
 </header>
 
-<main class="site-main">
-  <section class="page">
-    <header class="page-header">
-      <h1 class="page-title">Markets</h1>
-    </header>
 
-    <div class="page-content">
-      <p>
-        AGI&M ASSETS INC. supports infrastructure-grade projects across select markets
-        where reliability, compliance, and execution discipline are critical.
-      </p>
+  <!-- Main Content -->
+  <main class="site-main">
+    <section class="page">
+  <header class="page-header">
+    <h1 class="page-title">Markets</h1>
+  </header>
 
-      <h2>Commercial and Industrial Energy</h2>
-      <p>
-        We support commercial and industrial energy projects that require dependable
-        hardware delivery and integration readiness, prioritizing operational continuity
-        and documented scope.
-      </p>
+  <div class="page-content">
+    <p>AGI&M ASSETS INC. supports infrastructure-grade projects across select markets where reliability, compliance, and execution discipline are critical.</p>
+<h2>Commercial and Industrial Energy</h2>
+<p>We support commercial and industrial energy projects that require dependable hardware delivery and integration readiness. These environments prioritize operational continuity and documented scope.</p>
+<h2>Utility and EPC-Led Projects</h2>
+<p>Our programs are structured to align with utility standards and EPC-led execution models. We collaborate within defined interfaces to support regulated infrastructure deployments.</p>
+<h2>Hyperscale and AI Data Centers</h2>
+<p>We provide power interconnect and infrastructure hardware for hyperscale and AI data center environments. These deployments emphasize consistency, traceability, and long-term operational stability.</p>
+<h2>Geographic Focus</h2>
+<p>Our work is focused on North America, with delivery models designed to align with regional infrastructure standards and project requirements.</p>
+  </div>
+</section>
 
-      <h2>Utility and EPC-Led Projects</h2>
-      <p>
-        Our programs align with utility standards and EPC-led execution models,
-        supporting regulated infrastructure deployments through defined interfaces.
-      </p>
+  </main>
 
-      <h2>Hyperscale and AI Data Centers</h2>
-      <p>
-        We provide power interconnect and infrastructure hardware for hyperscale
-        and AI data center environments, emphasizing consistency, traceability,
-        and long-term operational stability.
-      </p>
-
-      <h2>Geographic Focus</h2>
-      <p>
-        Our work is focused on North America, with delivery models designed to align
-        with regional infrastructure standards and project requirements.
-      </p>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
+  <!-- Footer -->
+  <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-left">
-      © 2019–<span id="year"></span> AGI&M ASSETS INC. All rights reserved.
+      © <span id="copyright-start">2019</span>–<span id="copyright-year"></span>
+      AGI&M ASSETS INC.. All rights reserved.
     </div>
+
     <div class="footer-right">
-      <a href="https://linkedin.com/company/agimassets" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://linkedin.com/company/agimassets"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="AGI&M ASSETS INC. on LinkedIn"
+      >
         LinkedIn
       </a>
     </div>
   </div>
+
+  <script>
+    (function () {
+      var y = new Date().getFullYear();
+      var el = document.getElementById("copyright-year");
+      if (el) el.textContent = y;
+    })();
+  </script>
 </footer>
 
-<script src="/assets/js/main.js"></script>
-<script>
-  (function () {
-    var y = new Date().getFullYear();
-    var el = document.getElementById("year");
-    if (el) el.textContent = y;
-  })();
-</script>
 
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
