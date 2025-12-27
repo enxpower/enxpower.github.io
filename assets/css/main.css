@@ -32,7 +32,7 @@ body {
 
 /* Header */
 .site-header {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.08);
 }
 
 .header-inner {
@@ -86,12 +86,19 @@ body {
   max-width: 720px;
 }
 
-/* --- Subtle Section Dividers (Very restrained) --- */
-.page-content h2,
+/* Section dividers (subtle) */
+.page-content h2 {
+  font-size: 22px;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.06);
+}
+
 .page-content h3 {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-  padding-bottom: 6px;
-  margin-bottom: 18px;
+  font-size: 18px;
+  margin-top: 22px;
+  margin-bottom: 10px;
 }
 
 /* Home */
@@ -109,8 +116,8 @@ body {
 
 /* Footer */
 .site-footer {
-  border-top: 1px solid #e5e5e5;
-  padding: 32px 0;
+  border-top: 1px solid rgba(17, 17, 17, 0.08);
+  padding: 28px 0;
   font-size: 13px;
   color: #666;
 }
@@ -128,6 +135,24 @@ body {
 
 .site-footer a:hover {
   text-decoration: underline;
+}
+
+/* Footer icon */
+.footer-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.footer-icon svg {
+  fill: rgba(17, 17, 17, 0.45);
+}
+
+.footer-icon:hover svg {
+  fill: rgba(17, 17, 17, 0.60);
 }
 
 /* Responsive */
