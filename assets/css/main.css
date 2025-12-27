@@ -84,6 +84,9 @@ body {
 .page-content p {
   margin-bottom: 16px;
   max-width: 720px;
+  .page-content ul { list-style: none; padding-left: 0; margin-left: 0; }
+  .page-content li { padding-left: 0; }
+
 }
 
 /* Section dividers (subtle) */
