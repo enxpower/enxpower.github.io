@@ -1,0 +1,142 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #111;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Layout */
+.site-header,
+.site-footer {
+  width: 100%;
+}
+
+.header-inner,
+.footer-inner,
+.site-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+.site-brand .brand-link {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #111;
+}
+
+.site-nav .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+.site-main {
+  padding: 64px 24px;
+}
+
+/* Page */
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.page-content p {
+  margin-bottom: 16px;
+  max-width: 720px;
+}
+
+/* Home */
+.home-hero h1 {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.home-intro p {
+  max-width: 720px;
+  margin-bottom: 16px;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid #e5e5e5;
+  padding: 32px 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-footer a {
+  color: #666;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    height: auto;
+    padding: 16px 24px;
+  }
+
+  .site-nav .nav-list {
+    gap: 16px;
+  }
+
+  .site-main {
+    padding: 48px 24px;
+  }
+}
