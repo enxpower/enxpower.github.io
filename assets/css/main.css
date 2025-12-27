@@ -1,4 +1,6 @@
-/* Reset */
+/* =========================
+   Reset
+========================= */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,7 +18,9 @@ body {
   line-height: 1.6;
 }
 
-/* Layout */
+/* =========================
+   Layout
+========================= */
 .site-header,
 .site-footer {
   width: 100%;
@@ -30,7 +34,9 @@ body {
   padding: 0 24px;
 }
 
-/* Header */
+/* =========================
+   Header
+========================= */
 .site-header {
   border-bottom: 1px solid rgba(17, 17, 17, 0.08);
 }
@@ -65,12 +71,16 @@ body {
   text-decoration: underline;
 }
 
-/* Main */
+/* =========================
+   Main
+========================= */
 .site-main {
   padding: 64px 24px;
 }
 
-/* Page */
+/* =========================
+   Page
+========================= */
 .page-header {
   margin-bottom: 32px;
 }
@@ -81,15 +91,35 @@ body {
   letter-spacing: -0.02em;
 }
 
+/* 正文段落 */
 .page-content p {
   margin-bottom: 16px;
   max-width: 720px;
-  .page-content ul { list-style: none; padding-left: 0; margin-left: 0; }
-  .page-content li { padding-left: 0; }
-
 }
 
-/* Section dividers (subtle) */
+/* =========================
+   ❗ 彻底移除黑点（核心）
+========================= */
+.page-content ul,
+.page-content ol {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.page-content li {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* 干掉浏览器 marker */
+.page-content li::marker {
+  content: none !important;
+}
+
+/* =========================
+   Section dividers
+========================= */
 .page-content h2 {
   font-size: 22px;
   margin-top: 28px;
@@ -104,7 +134,9 @@ body {
   margin-bottom: 10px;
 }
 
-/* Home */
+/* =========================
+   Home
+========================= */
 .home-hero h1 {
   font-size: 36px;
   font-weight: 600;
@@ -117,7 +149,9 @@ body {
   margin-bottom: 16px;
 }
 
-/* Footer */
+/* =========================
+   Footer
+========================= */
 .site-footer {
   border-top: 1px solid rgba(17, 17, 17, 0.08);
   padding: 28px 0;
@@ -158,7 +192,9 @@ body {
   fill: rgba(17, 17, 17, 0.60);
 }
 
-/* Responsive */
+/* =========================
+   Responsive
+========================= */
 @media (max-width: 768px) {
   .header-inner {
     flex-direction: column;
